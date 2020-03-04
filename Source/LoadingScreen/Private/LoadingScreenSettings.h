@@ -35,7 +35,7 @@ struct LOADINGSCREEN_API FLoadingScreenDescription
 
 	/** Should we just play back, loop, etc.  NOTE: if playback type is MT_LoadingLoop, then MoviePlayer will auto complete when in the last movie and load finishes regardless of bAutoCompleteWhenLoadingCompletes */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Loading)
-	TEnumAsByte<EMoviePlaybackType> PlaybackType;
+	TEnumAsByte<EMoviePlaybackType> PlaybackType = EMoviePlaybackType::MT_Normal;
 
 	/** The movie paths local to the game's Content/Movies/ directory without extension. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Movies)
