@@ -38,6 +38,7 @@ struct LOADINGSCREEN_API FLoadingScreenDescription
 	bool bAllowInEarlyStartup = false;
 
 	/** If true, this will call the engine tick while the game thread is stalled waiting for a loading movie to finish. This only works for post-startup load screens and is potentially unsafe */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Loading)
 	bool bAllowEngineTick = false;
 
 	/** Should we just play back, loop, etc.  NOTE: if playback type is MT_LoadingLoop, then MoviePlayer will auto complete when in the last movie and load finishes regardless of bAutoCompleteWhenLoadingCompletes */
