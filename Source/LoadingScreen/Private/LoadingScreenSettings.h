@@ -83,6 +83,8 @@ class LOADINGSCREEN_API ULoadingScreenSettings : public UDeveloperSettings
 	GENERATED_UCLASS_BODY()
 
 public:
+	UPROPERTY(config, EditAnywhere, Category=Screens)
+	bool bEnableStartupScreen;
 
 	/** The startup screen for the project. */
 	UPROPERTY(config, EditAnywhere, Category=Screens)

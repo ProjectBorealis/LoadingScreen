@@ -56,7 +56,10 @@ void FLoadingScreenModule::StartupModule()
 
 		// Prepare the startup screen, the PrepareLoadingScreen callback won't be called
 		// if we've already explictly setup the loading screen.
-		BeginLoadingScreen(Settings->StartupScreen);
+		if (Settings->bEnableStartupScreen)
+		{
+			BeginLoadingScreen(Settings->StartupScreen);
+		}
 	}
 }
 
