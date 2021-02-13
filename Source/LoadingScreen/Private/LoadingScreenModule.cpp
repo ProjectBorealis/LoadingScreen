@@ -84,6 +84,7 @@ void FLoadingScreenModule::BeginLoadingScreen(const FLoadingScreenDescription& S
 	LoadingScreen.MoviePaths = ScreenDescription.MoviePaths;
 	LoadingScreen.PlaybackType = ScreenDescription.PlaybackType;
 	LoadingScreen.bAllowInEarlyStartup = ScreenDescription.bAllowInEarlyStartup;
+	LoadingScreen.bAllowEngineTick = ScreenDescription.bAllowEngineTick;
 	
 	if ( ScreenDescription.bShowUIOverlay )
 	{
