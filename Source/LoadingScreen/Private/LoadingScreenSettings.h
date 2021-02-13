@@ -33,6 +33,10 @@ struct LOADINGSCREEN_API FLoadingScreenDescription
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Loading)
 	bool bWaitForManualStop = false;
 
+	/** If true loading screens here cannot have any uobjects of any kind or use any engine features at all. This will start the movies very early as a result on platforms that support it */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Loading)
+	bool bAllowInEarlyStartup = false;
+
 	/** Should we just play back, loop, etc.  NOTE: if playback type is MT_LoadingLoop, then MoviePlayer will auto complete when in the last movie and load finishes regardless of bAutoCompleteWhenLoadingCompletes */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Loading)
 	TEnumAsByte<EMoviePlaybackType> PlaybackType = EMoviePlaybackType::MT_Normal;

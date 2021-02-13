@@ -83,6 +83,7 @@ void FLoadingScreenModule::BeginLoadingScreen(const FLoadingScreenDescription& S
 	LoadingScreen.bWaitForManualStop = ScreenDescription.bWaitForManualStop;
 	LoadingScreen.MoviePaths = ScreenDescription.MoviePaths;
 	LoadingScreen.PlaybackType = ScreenDescription.PlaybackType;
+	LoadingScreen.bAllowInEarlyStartup = ScreenDescription.bAllowInEarlyStartup;
 	
 	if ( ScreenDescription.bShowUIOverlay )
 	{
